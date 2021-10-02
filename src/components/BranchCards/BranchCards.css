@@ -1,0 +1,104 @@
+.branchcardsA-wrapper{
+    width: 100%;
+    margin: 40px 0px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow:  7px 7px 18px #e3e3e3,
+                -7px -7px 18px #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+.branchcardsB-wrapper{
+    width: 100%;
+    margin: 40px 0px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow:  7px 7px 18px #e3e3e3,
+                -7px -7px 18px #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+.branchcardsA-wrapper:hover, .branchcardsB-wrapper:hover{
+    transform: translateY(-10px);
+    box-shadow:  8px 8px 18px #dadada,
+                -8px -8px 18px #ffffff;
+}
+.branchcards-left-wrapper{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.branchcards-right-wrapper{
+    width: 45%;
+}
+.branchcards-header{
+    font-size: 24px;
+    font-weight: 600;
+    color: #282828;
+}
+.branchcards-desc{
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    color: #282828;
+}
+.branchcards-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: #282828;
+}
+.card-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3bedf3;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Ubuntu Mono', sans-serif;
+    text-transform: uppercase;
+}
+.branchcard-lottie{
+    width: 80%;
+    margin: auto;
+    object-fit: contain;
+}
+.lottie-player{
+    width: 60%;
+    margin: auto;
+    object-fit: contain;
+}
+@media all and (max-width: 440px){
+    .branchcardsA-wrapper{
+        width: 90%;
+        margin: 40px auto;
+        padding-bottom: 20px;
+        flex-direction: column-reverse;
+    }
+    .branchcardsB-wrapper{
+        width: 90%;
+        margin: 40px auto;
+        padding-bottom: 20px;
+        flex-direction: column-reverse;
+    }
+    .branchcards-left-wrapper{
+        width: 100%;
+    }
+    .branchcards-right-wrapper{
+        width: 100%;
+    }
+    .branchcards-desc {
+        display: none;
+    }
+    .card-link{
+        margin-top: 40px;
+    }
+    
+}

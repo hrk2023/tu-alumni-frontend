@@ -1,0 +1,106 @@
+.homepage-banner-wrapper{
+    width: 90%;
+    margin: auto;
+    padding: 50px 0px 100px 0px; 
+    display: flex;
+    flex-direction: row;
+}
+.homepage-banner-left{
+    width: 50%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.homepage-banner-right{
+    width: 50%;
+}
+.homepage-banner-header{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1f1f1f;
+    text-align: left;
+}
+#h0{
+    text-transform: uppercase;
+    color: #282828;
+    font-size: 22px;
+}
+#h1{
+    text-transform: uppercase;
+    color: #282828;
+}
+#h2{
+    text-transform: uppercase;
+    color: #FF2D9B;
+}
+.homepage-banner-desc{
+    padding-top: 20px;
+    text-align: left;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #282828;
+}
+.homepage-banner-btn{
+    width: 100%;
+}
+.homepage-job-btn{
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #FF2D9B;
+    border: none;
+    border-radius: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #fff;
+    padding: 8px 20px;
+    margin-top: 30px;
+}
+#banner{
+    width: 100%;
+    object-fit: contain;
+}
+.branchlist-header{
+    width: 100%;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #282828;
+}
+.branchlist-wrapper{
+    width: 85%;
+    margin: auto;
+}
+@media all and (max-width: 440px){
+    .homepage-banner-wrapper{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .homepage-banner-left{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .homepage-banner-right{
+        width: 100%;
+    }
+    .homepage-banner-header{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .branchlist-header{
+        width: 90%;
+        margin: auto;
+        font-size: 35px;
+    }
+    .homepage-banner-desc{
+        text-align: center;
+    }
+    .homepage-banner-btn{
+        display: flex;
+        justify-content: center;
+    }
+}

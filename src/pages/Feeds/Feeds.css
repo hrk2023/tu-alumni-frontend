@@ -1,0 +1,23 @@
+.feeds-wrapper{
+    width: 100%;
+}
+.feeds-header{
+    width: 90%;
+    margin: 70px auto;
+    text-transform: uppercase;
+    color: #282828;
+    font-size: 40px;
+    font-weight: 600;
+}
+.no-feeds, .feeds-acquired{
+    width: 90%;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: #282828;
+    font-size: 20px;
+    font-weight: 500;
+}
