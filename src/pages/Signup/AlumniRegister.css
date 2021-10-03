@@ -1,0 +1,77 @@
+.registerpage-wrapper{
+    width: 100%;
+    height: 100vh;
+    background-color: #de3d06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registercard-wrapper{
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    background-color: #161616;
+    box-shadow: 4px -1px 18px -1px #0f0e0ecf;
+    -webkit-box-shadow: 4px -1px 18px -1px #0f0e0ecf;
+    -moz-box-shadow: 4px -1px 18px -1px #0f0e0ecf;
+}
+.registercard-left{
+    width: 50%;
+    padding: 80px 0px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #e65f1c;
+}
+#lottie{
+    width: 80%;
+    object-fit: contain;
+}
+.registercard-header{
+    width: 80%;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.registercard-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tlogo{
+    width: 40px;
+    object-fit: contain;
+    justify-self: center;
+}
+.name{
+    width: 50%;
+    margin: auto;
+    font-size: 2px;
+    font-weight: 600;
+    color: whitesmoke;
+    justify-self: center;
+}
+@media screen and (max-width: 768px){
+    .registercard-wrapper{
+        width: 90%;
+    }
+    .registercard-left{
+        padding: 100px 0px;
+    }
+}
+@media screen and (max-width: 440px){
+    .registercard-wrapper{
+        width: 90%;
+    }
+    .registercard-left{
+        display: none;
+    }
+    .registercard-right{
+        width: 100%;
+    }
+}

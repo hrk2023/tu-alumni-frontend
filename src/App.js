@@ -6,17 +6,19 @@ Route
 
 
 import Homepage  from './pages/Homepage/Homepage';
-import Navbar from './components/Navbar/Navbar';
 import Feeds from './pages/Feeds/Feeds';
+import AlumniRegister from './pages/Signup/AlumniRegister';
+import Login from './pages/Login/Login';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar/>
         <Switch>
           <Route path="/" exact component={Homepage} />
           <Route path="/feeds" component={Feeds}/>
+          <Route path="/register" component={AlumniRegister}/>
+          <Route path="/login" component={Login}/>
         </Switch>
       </div>
     </Router>

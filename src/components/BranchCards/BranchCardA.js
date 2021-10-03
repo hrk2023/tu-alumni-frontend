@@ -2,7 +2,7 @@ import React from 'react';
 import './BranchCards.css';
 
 import {BiRightArrowAlt} from 'react-icons/bi';
-import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import LottiePlayer from '../LottiePlayer/LottiePlayer';
 
 function BranchCardsA({bheader, bdesc, blink, lottie}) {
     return (
@@ -19,12 +19,7 @@ function BranchCardsA({bheader, bdesc, blink, lottie}) {
                 </div>
             </div>
             <div className="branchcards-right-wrapper">
-            <Player autoplay loop
-            src={lottie}
-            background = {'transparent'}
-            className="lottie-player">
-                <Controls visible={false}/>
-            </Player>
+                <LottiePlayer lottieUrl={lottie}/>
             </div>
         </div>
     )

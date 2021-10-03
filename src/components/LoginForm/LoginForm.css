@@ -1,0 +1,100 @@
+#loginform-register-link{
+    margin-left: 5px;
+    color: #de3d06;
+}
+#login-ms-form{
+    width: 70%;
+    margin: auto;
+}
+.f-tab { 
+    display: block; 
+}
+.hidden { 
+    display: none;
+}
+.login-form-footer{
+    color: #fff;
+}
+#loginform-login-link{
+    margin-left: 5px;
+    color: #de3d06;
+}
+.next{
+    background-color: #de3d06;
+    color: black;
+    padding: 8px 25px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.previous{
+    background-color: #de3d06;
+    color: black;
+    padding: 8px 25px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin: 20px auto;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.form-group{
+    margin: 20px 0px;
+}
+.form-control, .form-select{
+    background-color: #1f1f1f;
+    border: none;
+    border-radius: 50rem;
+    padding: 10px;
+    padding-left: 20px;
+    color: #faf5f5;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus{
+    background-color: #1f1f1f !important;
+    color: #8f8f8f !important
+}
+.form-select{
+    color: #8f8f8f;
+}
+.form-control::placeholder{
+    color: #8f8f8f;
+}
+.form-control:focus{
+    background-color: #1f1f1f;
+    color: #e2d8d8;
+}
+#msg{
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    color: #8f8f8f;
+}
+.ms-form-btn-grp{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 768px){
+    .previous{
+        padding: 8px 18px;
+    }
+}
+@media screen and (max-width: 440px){
+    #login-ms-form{
+        width: 85%;
+    }
+    .previous{
+        padding: 8px 18px;
+    }
+}

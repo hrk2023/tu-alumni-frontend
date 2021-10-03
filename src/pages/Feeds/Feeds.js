@@ -2,6 +2,8 @@ import React from 'react'
 import axios from 'axios';
 import './Feeds.css';
 
+import Navbar from '../../components/Navbar/Navbar';
+
 function Feeds() {
 
     const [feeds, setFeeds] = React.useState('');
@@ -20,20 +22,23 @@ function Feeds() {
     },[]);
 
     return (
-        <div className="feeds-wrapper">
-            <div className="feeds-header">
-                Latest Feeds
+        <React.Fragment>
+            <Navbar/>
+            <div className="feeds-wrapper">
+                <div className="feeds-header">
+                    Latest Feeds
+                </div>
+                {feeds === '' ? 
+                    <div className="no-feeds">
+                        No Latest Feeds
+                    </div>
+                    :
+                    <div className="feeds-inner-wrapper">
+                        feeds acquired
+                    </div>
+                }
             </div>
-            {feeds === '' ? 
-                <div className="no-feeds">
-                    No Latest Feeds
-                </div>
-                :
-                <div className="feeds-inner-wrapper">
-                    feeds acquired
-                </div>
-            }
-        </div>
+        </React.Fragment>
     )
 }
 
